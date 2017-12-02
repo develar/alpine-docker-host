@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  log-rotate:
+    hostname: "{{.Node.Hostname}}-{{.Service.Name}}"
+    image: develar/alpine-host-log@sha256:a8e1cb315d49d43e387e14674a86f9e328f6e662c08a698bddaae7fca4892843
+    volumes:
+      - /var/log:/host-log
+    deploy:
+      mode: global

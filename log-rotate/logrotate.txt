@@ -1,0 +1,10 @@
+daily
+nocompress
+copytruncate
+rotate 0
+maxsize 10M
+nomail
+missingok
+
+/host-log/messages {}
+/host-log/docker.log { }
